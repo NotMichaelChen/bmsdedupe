@@ -108,6 +108,7 @@ when isMainModule:
     pathsArray.del(chosenIndex)
 
     for path in pathsArray:
-      moveDir(path, mergedInto)
+      copyDir(path, mergedInto)
+      removeDir(path)
   
   db.close()
